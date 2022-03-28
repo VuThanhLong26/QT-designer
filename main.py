@@ -9,6 +9,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from QtGui1 import Ui_MainWindow
 
 
+
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -17,6 +19,18 @@ class MainWindow(QMainWindow):
 
         self.uic.Button_video.clicked.connect(self.start_capture_video)
         self.uic.Button_stop.clicked.connect(self.stop_capture_video)
+        self.uic.Button_start.clicked.connect(self.start_tracking)
+        self.uic.Button_line.clicked.connect(self.start_line)
+        self.uic.Button_signal.clicked.connect(self.start_signal)
+
+    def start_tracking(self):
+        pass
+    def start_line(self):
+
+        pass
+    def start_signal(self):
+        pass
+
 
         self.thread = {}
     def closeEvent(self, event):
