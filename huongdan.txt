@@ -1,0 +1,2 @@
+tạo 1 flie py từ giao diện đã tạo
+pyuic5 -x qtgui.ui -o QtGui.py
